@@ -8,32 +8,32 @@ public class aula03 {
 		int repetir = 0;
 		
 		while (repetir != 1) {			
-			Scanner resposta_do_usu·rio = new Scanner(System.in);
+			Scanner usuarioResposta = new Scanner(System.in);
 			
-			System.out.println("Qual È o seu nome?");
-			String nome = resposta_do_usu·rio.next();
+			System.out.println("Qual √© o seu nome?");
+			String nome = usuarioResposta.next();
 			
-			System.out.println("H· quanto tempo vocÍ trabalha conosco?\n[DIGITE APENAS N⁄MEROS]");
-			int perÌodo = resposta_do_usu·rio.nextInt();
+			System.out.println("H√° quanto tempo voc√™ trabalha conosco?\n[DIGITE APENAS N√öMEROS]");
+			int periodo = usuarioResposta.nextInt();
 			
-			System.out.println("Qual È o seu sal·rio atual?");
-			int sal·rio_atual = resposta_do_usu·rio.nextInt();
+			System.out.println("Qual √© o seu sal√°rio atual?");
+			int salarioAtual = usuarioResposta.nextInt();
 			
-			int aumento_porcentagem = 10;
-			int sal·rio_novo = (sal·rio_atual/100)*aumento_porcentagem;
+			int porcentagemAumento = 10;
+			int salarioNovo = (salarioAtual/100)*porcentagemAumento;
 			
 			String mensagem;
 			
-			if (perÌodo > 10.0) {
-				mensagem = "Quanto tempo " + nome + "! \n Muito bom ter vocÍ conosco, por isso gostarÌamos de recompens·-lo com um aumento de " + aumento_porcentagem +"%, por isso, de agora em diante, seu sal·rio ser·: R$" + sal·rio_novo;
+			if (periodo > 10.0) {
+				mensagem = "Quanto tempo " + nome + "! \n Muito bom ter voc√™ conosco, por isso gostar√≠amos de recompens√°-lo com um aumento de " + porcentagemAumento +"%, por isso, de agora em diante, seu sal√°rio ser√°: R$" + salarioNovo;
 			}else {
-				mensagem = "Agradecemos por responder a este formul·rio!";
+				mensagem = "Agradecemos por responder a este formul√°rio!";
 			}
 			
 			System.out.println(mensagem);
 			
-			System.out.println("\n\nGOSTARIA DE REPETIR O PROGRAMA?\n[(0) SIM ñ (1) N√O]\n:");
-			repetir = resposta_do_usu·rio.nextInt();
+			System.out.println("\n\nGOSTARIA DE REPETIR O PROGRAMA?\n[(0) SIM ‚Äì (1) N√ÉO]\n:");
+			repetir = usuarioResposta.nextInt();
 		}
 	}
 }

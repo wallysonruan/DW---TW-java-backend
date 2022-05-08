@@ -10,29 +10,27 @@ public class aula03 {
 		while (repetir != 1) {			
 			Scanner usuarioResposta = new Scanner(System.in);
 			
-			System.out.println("Qual Ã© o seu nome?");
+			System.out.print("Qual é o seu nome?\n:");
 			String nome = usuarioResposta.next();
 			
-			System.out.println("HÃ¡ quanto tempo vocÃª trabalha conosco?\n[DIGITE APENAS NÃšMEROS]");
-			int periodo = usuarioResposta.nextInt();
+			System.out.print("Há quanto tempo você trabalha conosco?\n[DIGITE APENAS NÚMEROS]\n:");
+			double periodo = usuarioResposta.nextDouble();
 			
-			System.out.println("Qual Ã© o seu salÃ¡rio atual?");
-			int salarioAtual = usuarioResposta.nextInt();
+			System.out.print("Qual é o seu salário atual?\n:");
+			double salarioAtual = usuarioResposta.nextDouble();
 			
 			int porcentagemAumento = 10;
-			int salarioNovo = (salarioAtual/100)*porcentagemAumento;
+			double salarioNovo = salarioAtual + ((salarioAtual / 100) * porcentagemAumento);
 			
 			String mensagem;
 			
-			if (periodo > 10.0) {
-				mensagem = "Quanto tempo " + nome + "! \n Muito bom ter vocÃª conosco, por isso gostarÃ­amos de recompensÃ¡-lo com um aumento de " + porcentagemAumento +"%, por isso, de agora em diante, seu salÃ¡rio serÃ¡: R$" + salarioNovo;
+			if (periodo > 10) {
+				mensagem = "Quanto tempo " + nome + "!\nMuito bom ter você conosco, por isso gostaríamos de recompensá-lo com um aumento de " + porcentagemAumento +"%.\nOu seja, de agora em diante, seu salário será: R$" + salarioNovo;
 			}else {
-				mensagem = "Agradecemos por responder a este formulÃ¡rio!";
+				mensagem = "Agradecemos por responder a este formulário!";
 			}
 			
-			System.out.println(mensagem);
-			
-			System.out.println("\n\nGOSTARIA DE REPETIR O PROGRAMA?\n[(0) SIM â€“ (1) NÃƒO]\n:");
+			System.out.print(mensagem + "\n\nGOSTARIA DE REPETIR O PROGRAMA?\n[(0) SIM – (1) NÃO]\n:");
 			repetir = usuarioResposta.nextInt();
 		}
 	}

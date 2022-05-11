@@ -13,6 +13,8 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [VÍDEO E TEXTO, CURSO, INGLÊS] [Introduction to Object-Oriented Programming with Java I: Foundations and Syntax Basics](https://www.edx.org/course/introduction-to-java-programming-i-foundations-and-syntax-basics), disseram que terá legenda.
   
   [VÍDEO] [LET'S CODE – Variáveis JAVA](https://www.youtube.com/watch?v=MQGsIMsQNUA&t=291s), legenda automática.
+  
+  [TEXTO] [Apenas um guia prático para começar a usar o git sem complicação](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 
 ### PRÁTICA (Exercícios)
   [VÍDEO E TEXTO] [Digital House: Thoughtworks Java](https://br-playground.digitalhouse.com/)

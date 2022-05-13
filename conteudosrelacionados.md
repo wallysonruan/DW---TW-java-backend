@@ -18,7 +18,10 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
 
   [TEXTO] [Como funciona a classe Scanner do Java?](https://www.devmedia.com.br/amp/como-funciona-a-classe-scanner-do-java/28448)
 ### PRÁTICA (Exercícios)
+
   [VÍDEO E TEXTO] [Digital House: Thoughtworks Java](https://br-playground.digitalhouse.com/)
+
+  [TEXTO, INGLÊS] A tradução automática funciona bem. [Format String in Java with printf(), format(), Formatter and MessageFormat](https://stackabuse.com/how-to-format-a-string-in-java-with-examples/)
 
 ## APLICATIVOS
   [Java N-IDE - Android Builder - Java SE Compiler](https://play.google.com/store/apps/details?id=com.duy.compiler.javanide&hl=pt_BR&gl=US)

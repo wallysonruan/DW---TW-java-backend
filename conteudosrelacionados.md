@@ -16,6 +16,7 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   
   [TEXTO] [Apenas um guia prático para começar a usar o git sem complicação](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 
+  [TEXTO] [Como funciona a classe Scanner do Java?](https://www.devmedia.com.br/amp/como-funciona-a-classe-scanner-do-java/28448)
 ### PRÁTICA (Exercícios)
   [VÍDEO E TEXTO] [Digital House: Thoughtworks Java](https://br-playground.digitalhouse.com/)
 

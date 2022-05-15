@@ -25,15 +25,15 @@ public class ParesOuImpares {
 	    public static void main(String[] args) {
 	    
 	      Scanner usuarioResposta = new Scanner(System.in);
-	      
-	      System.out.print("Escolha o número inicial:\n");
-	      int numInicial = usuarioResposta.nextInt();
-	      
-	      System.out.print("Escolha o número final:\n");
-	      int numFinal = usuarioResposta.nextInt();
-	      
-	      System.out.print("Quais números gostaria de obter?\n [ 0 ] Pares  [ 1 ] Ímpares:\n\n:");
-	      int numTipo = usuarioResposta.nextInt();
+
+	    	  System.out.print("Escolha o número inicial:\n");
+		      int numInicial = usuarioResposta.nextInt();
+		      
+		      System.out.print("Escolha o número final:\n");
+		      int numFinal = usuarioResposta.nextInt();
+		      
+		      System.out.print("Quais números gostaria de obter?\n[ 0 ] Pares  [ 1 ] Ímpares:\n\n:");
+		      int numTipo = usuarioResposta.nextInt();
 	      
 	      usuarioResposta.close();
 	      

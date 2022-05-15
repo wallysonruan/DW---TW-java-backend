@@ -29,6 +29,12 @@ public class LinhaDoTempo {
 	    repetir = inputUsuario.nextInt();
 	    
 	    totalRodagens++;
+	    
+	    /*
+	    System.out.println(inputUsuario.nextLine());
+	    /*Por alguma razão o programa, sem a linha cima, apresenta erros a partir da primeira rodagem,
+	     * aparentemente, após a primeira rodagem há um resquício de input que faz com que o programa 
+	     * siga direto para a próxima linha.*/
 	   }
 	   inputUsuario.close();
 	   

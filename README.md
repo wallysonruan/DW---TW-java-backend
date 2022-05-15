@@ -62,6 +62,7 @@ Por já ter conhecimento em outras linguagens o novo aprendizado envolveu:
 3. Construção de arrays, o que ainda devo me aprofundar.
 3. Prática no uso da ferramenta Scanner. Por exemplo, aprendi que os comandos: System.util.Scanner.next() e o System.util.Scanner.nextLine() são diferentes, o primeiro recebe apenas uma cadeia de String (uma palavra) e o segundo recebe toda uma linha (textos).
 </details>
+
 <details>
 <summary>Números Pares ou Ímpares?(ITERAÇÃO, MÓDULO)</summary>
 
@@ -73,11 +74,20 @@ O que aprendi?
 2. Prática relacionada à construção de funções em JAVA, são criadas ao declarar que são do tipo VOID e que recebem parâmetros.
 </details>
 </details>
+
 <details>
 <summary>ESTRUTURAS VISANDO POO (Criação e reutilização de Classes, etc)</summary>
+
 <details>
 <summary>Funcionario (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")</summary>
 Classe simples que recebe dados como NOME; CARGO; SALÁRIO. Além de fornecer funções como MUDAR O NOME; MUDAR CARGO; AUMENTAR O SALÁRIO; MOSTRAR DADOS.
+</details>
+
+<details>
+<summary>Whatsapp (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)</summary>
+  
+[LINK PARA O README DO PACKAGE](https://github.com/wallysonruan/DW---TW-java-backend/blob/main/EXERCICIOS%20ALEATORIOS/Whatsapp.md)
+  
 </details>
 </details>
 </details>

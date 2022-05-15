@@ -1,11 +1,10 @@
-package linhaDoTempo;
-
+package exercicios;
 import java.util.Scanner;
 
 public class LinhaDoTempo {
-	
-	public static void main (String[] args) {
-	  String titulo;
+
+	public static void linhaDoTempo() {
+		String titulo;
 	  String[] acontecimentos = new String[100];
 	  int[] ano = new int[100];
 	  
@@ -40,5 +39,10 @@ public class LinhaDoTempo {
 	     "._ "+ ano[i] + ": " + acontecimentos[i] + "\n."
 	     );
 	   }
-	 }
+	}
+	
+	public static void main(String[] args) {
+		linhaDoTempo();
+	}
+
 }

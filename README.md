@@ -45,17 +45,17 @@ Ao fim delas, se a pessoa funcionária tiver mais de 10 anos de trabalho, o sal�
 
 <details>
 <summary>Linha do Tempo</summary>
-<br>
+
 Após uma experiência envolvendo um infográfico de uma linha do tempo, estive a pensar na existência de programas que recebiam uma série de acontecimento e devolvia uma linha do tempo organizada cronologicamente. Curioso sobre como seria a lógica de tais programas, escrevi um em JAVA.
 
 Meu programa é bem simples, ele recebe os seguintes inputs:
 1. Nome da linha do tempo;
 2. Acontecimento;
 3. Ano do acontecimento.
-  
+
 Opções do programa:
 1. Oferece a opção de adicionar ou não mais de um acontecimento.
-  
+
 O que aprendi?
 
 Por já ter conhecimento em outras linguagens o novo aprendizado envolveu:
@@ -64,4 +64,15 @@ Por já ter conhecimento em outras linguagens o novo aprendizado envolveu:
 3. Prática no uso da ferramenta Scanner. Por exemplo, aprendi que os comandos: System.util.Scanner.next() e o System.util.Scanner.nextLine() são diferentes, o primeiro recebe apenas uma cadeia de String (uma palavra) e o segundo recebe toda uma linha (textos).
 </details>
 
+<details>
+<summary>Números Pares ou Ímpares?</summary>
+
+Programa que recebe um número inicial e um final, além de receber o tipo de número desejado, isto é, par ou ímpar. Após os parâmetros terem sido declarados o programa itera o intervalo de números que há entre o INICIAL e o FINAL e devolve apenas os que são pares ou ímpares, a depender da escolha do usuário.
+
+O que aprendi?
+
+1. A usar o operador MÓDULO (%), que divide um número pelo outro e retorna apenas o resto, ou seja, o que há no lado direito do ponto final, isto é, se o resultado for "0.1" o operador retornará 1.
+2. Prática relacionada à construção de funções em JAVA, são criadas ao declarar que são do tipo VOID e que recebem parâmetros.
+</details>
+  
 </details>

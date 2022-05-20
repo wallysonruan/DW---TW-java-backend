@@ -10,19 +10,21 @@ public class Arma implements Armas{
 	protected boolean silenciador = false;
 	protected int qtdAtualBalas;
 	protected int qtdVezesAtirou;
+	protected double tempoDeRecarga;
 	protected int qtdVezesRecarregou;
 	
-	public Arma(String nome, String tipo, String apelido, int qtdLimiteBalas, boolean automatica, double calibre) {
+	public Arma(String nome, String tipo, String apelido, int qtdLimiteBalas, boolean automatica, double calibre, double tempoDeRecarga) {
 		this.nome = nome;
 		this.tipo = tipo;
 		this.apelido = apelido;
 		this.qtdLimiteBalas = qtdLimiteBalas; 
 		this.automatica = automatica;
 		this.calibre = calibre;
+		this.tempoDeRecarga = tempoDeRecarga;
 	}
 	
 	private void alarmeRecarregar() {
-		System.out.println("Munição insuficiente!");
+		System.out.println("\n\nMunição insuficiente!");
 	}
 	
 	@Override
@@ -37,7 +39,7 @@ public class Arma implements Armas{
 
 	@Override
 	public void recarregar() {
-		this.qtdAtualBalas = this.qtdLimiteBalas;
+		this.qtdAtualBalas = this.qtdAtualBalas == 0 ? this.qtdLimiteBalas : this.qtdAtualBalas + (7 - this.qtdAtualBalas);
 		this.qtdVezesRecarregou++;
 	}
 
@@ -48,7 +50,7 @@ public class Arma implements Armas{
 
 	@Override
 	public void status() {
-		System.out.printf("NOME: %s\nTIPO: %s\nQTD. ATUAL DE BALAS: %d", this.nome, this.tipo, this.qtdAtualBalas);
+		System.out.printf("\nNOME: %s\nTIPO: %s\nQTD. ATUAL DE BALAS: %d", this.nome, this.tipo, this.qtdAtualBalas);
 	}
 
 }

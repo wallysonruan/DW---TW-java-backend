@@ -1,6 +1,16 @@
 # Back-end Java
 Repositório contendo os arquivos dos códigos que escrevi durante o curso BACK-END JAVA do programa INCLUA oferecido pela THOUGHTWORKS, tendo as aulas ministradas pela DIGITAL HOUSE.
 
+SUMÁRIO:
+
+  1. [INSIGHTS DA INTERAÇÃO COM OS DEMAIS](#INSIGHTS-DA-INTERAÇÃO-COM-OS-DEMAIS)
+  2. [ALGORITMOS CODIFICADOS](#ALGORITMOS-CODIFICADOS)
+     1. [FORNECIDOS PELO CURSO](#FORNECIDOS-PELO-CURSO)
+        1. MÓDULO 2
+           1. AULA 03
+     2. PESQUISADOS PARALELAMENTE
+        1. ESTUDO DE ESTRUTURA
+  3. 
 <br>
 <hr>
 <br>
@@ -23,8 +33,6 @@ Repositório contendo os arquivos dos códigos que escrevi durante o curso BACK-
 <br>
 
 ## ALGORITMOS CODIFICADOS
-<br>
-
 ### FORNECIDOS PELO CURSO
 <br>
 
@@ -171,6 +179,30 @@ O que aprendi?
 
 1. A usar o operador MÓDULO (%), que divide um número pelo outro e retorna apenas o resto, ou seja, o que há no lado direito do ponto final, isto é, se o resultado for "0.1" o operador retornará 1.
 2. Prática relacionada à construção de funções em JAVA, são criadas ao declarar que são do tipo VOID e que recebem parâmetros.
+
+<br>
+
+#### 3. PARÂMETROS
+
+Assistindo ao vídeo [Como e porque implementar o método equals no java (EXPLICADO NA PRÁTICA)](https://www.youtube.com/watch?v=9q7BrH78ZWM), mais especificamente no minuto 02:45, aprendi que JAVA aceita que, durante a passagem de parâmetros na instanciação, o atributo seja citado.
+
+CLASSE:
+```
+public class Pessoa(){
+  private String nome;
+
+  public void Pessoa(String nome){
+    this.nome = nome;
+  }
+}
+```
+
+INSTANCIAÇÃO:
+```
+Pessoa pessoa1 = new Pessoa(nome: "João da Silva");
+```
+
+Tal maneira de passagem de parâmetros, ainda que verbosa, para mim, é melhor do que a tradicional, isto é, sem mencionar o atributo. Penso isso pois, às vezes, depois de já haver instanciado, preciso ir até a classe e verificar o que cada parâmetro representa. Em resumo, a forma apresentada no vídeo é mais legível aos humanos.
 
 <br>
 

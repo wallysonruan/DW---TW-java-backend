@@ -2,9 +2,11 @@
 Repositório contendo os arquivos dos códigos que escrevi durante o curso BACK-END JAVA do programa INCLUA oferecido pela THOUGHTWORKS, tendo as aulas ministradas pela DIGITAL HOUSE.
 
 <br>
+<hr>
 <br>
 
 ## INSIGHTS DA INTERAÇÃO COM OS DEMAIS
+<br>
 
   1. A ferramenta *autocomplete* ("autocompletador") que eu costumava pensar ser uma ferramenta "extra", para agilizar o trabalho de digitação, é uma forma importantíssima de acessibilidade para pessoas com baixa mobilidade, como as pessoas tetraplégicas, afinal, a lida com o teclado e/ou a digitação por voz tende a ser letra por letra, e o autocomplete ajuda a minimizar o trabalho.
 
@@ -17,17 +19,20 @@ Repositório contendo os arquivos dos códigos que escrevi durante o curso BACK-
   5. Para pessoas cegas, o uso simultâneo do chat e da explicação sonora é complicado, pois, quando acontece, serão duas vozes: a do leitor de tela e a do professor ao mesmo tempo, o que dificulta a concentração.  
 
 <br>
+<hr>
 <br>
 
 ## ALGORITMOS CODIFICADOS
+<br>
 
 ### FORNECIDOS PELO CURSO
+<br>
 
 #### MÓDULO 2
 
 <br>
 
-Aula 03: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
+**AULA 03**: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
 
   1. Qual é o seu nome?; 
   2. Há quanto tempo trabalha aqui?;
@@ -37,7 +42,7 @@ Ao fim delas, se a pessoa funcionária tiver mais de 10 anos de trabalho, o sal�
 
 <br>
 
-Aula 08: Criando um jogo:
+**AULA 08**: Criando um jogo:
 
 Na aula 08 foi passado um exercício a ser resolvido em equipe, sendo ele:
   1. Criar uma classe jogador;
@@ -83,35 +88,53 @@ Caso a classe que extender a INTERFACE Armas não tiver os métodos acordados, o
 
 Percebam que tanto a INTERFACE Armas quanto a CLASSE Arma têm um método chamado SILENCIAR, na hora de evocá-lo qual o programa deve ativar? Para isso serve a palavra reservada @Override, do Inglês *sobrepor*, ela dirá ao programa que o método contido na classe Arma deve sobrepor ao método contido na INTERFACE. Graças a esse sistema (INTERFACE, EXTENDS e @OVERRIDE) que a linguagem JAVA aplica o conceito de MÚLTIPLA HERANÇA.
 
-Aula 09: Aprendendo a passar HERANÇAS:
+<br>
+
+**AULA 09**: Aprendendo a passar HERANÇAS:
+<br>
 
 Durante a aula 09 foram passados dois exercícios, listados abaixo.
 
   1. Criar uma classe abstrata e dessa duas classes concretas, em seguida uma classe principal na qual seriam consumidas as concretas;
   2. Criar uma superclasse com 5 atributos e 1 método, e dessa uma subclasse com 3 atributos e 1 método.
 
+<br>
+
   EXERCÍCIO 1 – Aprendizados:
 
   Classe abstrata, como criar e como utilizar. Durante a aula, eu e outros tivemos dúvidas similares, como "Qual é a diferença entre INTERFACE e CLASSE ABSTRATA?". Tivemos essa dúvida porque ambas as ferramentas são uma espécie acordo de padronização das classes que as instanciam e/ou extendem. Perguntamos.
 
-  O prof. Rafael respondeu-nos usando a seguinte tabela:
+  O prof. Rafael respondeu-nos usando a seguinte tabela (Frisando as diferenças 1, 2, 3 e 6):
 
-|Característica|Interface|Classe Abstrata|
-|:--|:--|:--|
-|Herança múltipla|Uma classe pode implementar diversas interfaces|Uma classe pode herdar somente uma classe|
-|Implementação Padrão|Uma interface não pode conter qualquer tipo de código, muito menos código padrão.|Uma classe abstrata pode fornecer código completo, código padrão ou ter apenas a declaração de seu esqueleto para ser posteriormente sobrescrita.|
-|Constantes|Suporte somente constantes do tipo estática.|Pode conter constantes estáticas e de instância.
-|Componentes de terceiros|Uma implementação de uma interface pode ser incluída a qualquer classe de terceiros.|Uma classe de terceiros precisa ser reescrita para estender somente a partir da classe abstrata.
-|Homogeneidade|Se todas as diversas implementações compartilham a assinatura do método então a interface funciona melhor.|Se as várias implementações são todas do tipo e compartilham um comportamento e status comum , então a classe abstrata funciona melhor.
-|Manutenção|Se o código do seu cliente conversa somente em termos de uma interface, você pode facilmente alterar a implementação concreta usando  um método factory.|Idêntico
-|Velocidade|Lento, requer trabalho extra para encontrar o método correspondente na classe atual.|Rápido
-|Clareza|Todas as declarações de constantes em uma interface são presumidamente publicas ou estáticas.|Você pode por código compartilhado em uma classe abstrata. Você pode usar código para computar o valor inicial de suas constantes e variáveis de instância ou estáticas.
-|Funcionalidades Adicionais|Se você incluir um novo método em uma interface você precisa ajustar todas as implementações da interface.|Se você incluir um novo método em uma classe abstrata você tem a opção de fornecer uma implementação padrão para ele.
+<br>
+
+|Nº|Característica|Interface|Classe Abstrata|
+|:--|:--|:--|:--|
+|1|Herança múltipla|Uma classe pode implementar diversas interfaces|Uma classe pode herdar somente uma classe|
+|2|Implementação Padrão|Uma interface não pode conter qualquer tipo de código, muito menos código padrão.|Uma classe abstrata pode fornecer código completo, código padrão ou ter apenas a declaração de seu esqueleto para ser posteriormente sobrescrita.|
+|3|Constantes|Suporte somente constantes do tipo estática.|Pode conter constantes estáticas e de instância.
+|4|Componentes de terceiros|Uma implementação de uma interface pode ser incluída a qualquer classe de terceiros.|Uma classe de terceiros precisa ser reescrita para estender somente a partir da classe abstrata.
+|5|Homogeneidade|Se todas as diversas implementações compartilham a assinatura do método então a interface funciona melhor.|Se as várias implementações são todas do tipo e compartilham um comportamento e status comum , então a classe abstrata funciona melhor.
+|6|Manutenção|Se o código do seu cliente conversa somente em termos de uma interface, você pode facilmente alterar a implementação concreta usando  um método factory.|Idêntico
+|7|Velocidade|Lento, requer trabalho extra para encontrar o método correspondente na classe atual.|Rápido
+|8|Clareza|Todas as declarações de constantes em uma interface são presumidamente publicas ou estáticas.|Você pode por código compartilhado em uma classe abstrata. Você pode usar código para computar o valor inicial de suas constantes e variáveis de instância ou estáticas.
+|9|Funcionalidades Adicionais|Se você incluir um novo método em uma interface você precisa ajustar todas as implementações da interface.|Se você incluir um novo método em uma classe abstrata você tem a opção de fornecer uma implementação padrão para ele.
+
+##### *FONTE: [DEVMEDIA – Interfaces x Classes Abstratas](https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337#:~:text=Uma%20interface%20n%C3%A3o%20pode%20conter,esqueleto%20para%20ser%20posteriormente%20sobrescrita.)*
+<br>
+
+Em resumo, entendi que a interface é melhor se for desejado apenas a padronização de alguns métodos das classes, enquanto que a classe abstrata é melhor quando várias classes compartilham atributos e métodos similares.
+
+<br>
+
+<br>
 
   EXERCÍCIO 2 – Aprendizados:
 
   Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.  
 
+<br>
+<hr>
 <br>
 
 ### PESQUISADOS PARALELAMENTE

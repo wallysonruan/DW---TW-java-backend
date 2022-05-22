@@ -1,12 +1,5 @@
 package aula09_02;
 
-/*
- * classe pai: 5 atributos, 1 método
-classe filho: 3 atributos 1 metodo
-tambem veiculo
-
- */
-
 public class Veiculo {
 	protected String modelo;
 	protected int numeroDeAssentos;
@@ -14,8 +7,12 @@ public class Veiculo {
 	protected boolean automatico;
 	protected boolean ligado = false;
 	
-	public void ligar(boolean ligado) {
-		this.ligado = ligado;
+	public void ligar() {
+		if(!this.ligado) {
+			this.ligado = true;
+		}else {
+			System.out.printf("O veículo %s já está ligado!", this.modelo);
+		}
 	}
 
 }

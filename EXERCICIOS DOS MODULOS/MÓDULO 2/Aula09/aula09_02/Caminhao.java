@@ -12,15 +12,19 @@ public class Caminhao extends Veiculo{
 	}
 
 	public void rampaAbrir() {
-		if(this.rampaTem) {
-			if(this.rampaAbrir == false){
-				System.out.println("A rampa abriu.");
-				this.rampaAbrir = true;
-			}else {
-				System.out.println("A rampa já está aberta.");
+		if(!this.ligado) {
+			System.out.println("O caminhão está desligado!");
+		}else {
+			if(this.rampaTem) {
+				if(this.rampaAbrir == false){
+					System.out.println("A rampa abriu.");
+					this.rampaAbrir = true;
+				}else {
+					System.out.println("A rampa já está aberta.");
+				}
+			}else{
+				System.out.print("Não há rampa para abrir");
 			}
-		}else{
-			System.out.print("Não há rampa para abrir");
 		}
 	}
 }

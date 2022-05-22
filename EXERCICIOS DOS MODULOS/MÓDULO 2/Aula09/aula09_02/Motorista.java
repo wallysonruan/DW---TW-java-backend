@@ -6,18 +6,10 @@ public class Motorista {
 		Caminhao caminhaoComRampa = new Caminhao("Carreta", true);
 		Caminhao caminhaoSemRampa = new Caminhao("Truck", false);
 
-		caminhaoComRampa.ligar(true);		
-		System.out.println("");
-		
 		caminhaoComRampa.rampaAbrir();
+		caminhaoComRampa.ligar();
 		caminhaoComRampa.rampaAbrir();
-		
-		System.out.println("");
-		caminhaoSemRampa.rampaAbrir();
-		
-		caminhaoComRampa.ligar(false);		
-		System.out.println("");
-		caminhaoComRampa.rampaAbrir();
+		caminhaoComRampa.ligar();
 	}
 
 }

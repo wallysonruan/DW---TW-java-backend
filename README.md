@@ -15,6 +15,7 @@ SUMÁRIO:
            1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
            2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
            3. [PARÂMETROS](#3-parâmetros)
+           4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
         2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
            1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
            2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
@@ -140,7 +141,7 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
   EXERCÍCIO 2 – Aprendizados:
 
   Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.
-  
+
 <hr>
 <br>
 
@@ -202,6 +203,48 @@ Pessoa pessoa1 = new Pessoa(nome: "João da Silva");
 ```
 
 Tal maneira de passagem de parâmetros, ainda que verbosa, para mim, é melhor do que a tradicional, isto é, sem mencionar o atributo. Penso isso pois, às vezes, depois de já haver instanciado, preciso ir até a classe e verificar o que cada parâmetro representa. Em resumo, a forma apresentada no vídeo é mais legível aos humanos.
+
+<br>
+
+#### 4. CONTADOR DE PALAVRAS
+Tive dificuldades de resolver um dos desafios do Edabit, chamado de [Contador de Palavras](https://edabit.com/challenge/5LnycSd2xT4uwZCpi), sendo eles:
+
+  1. Tentei resolver da forma mais simples que pude pensar, isto é, simplesmente iterar a STRING inputada pelo usuário e incrementar uma variável nomeada TOTAL a cada vez que um caractere vazio ("espaço") fosse encontrado. Não funcionou. String não é um objeto iterável.
+
+  2. Pesquisei pelos métodos disponíveis na classe STRING e encontrei o `split()`. Tentei utilizá-lo da maneira ilustrada abaixo. Porém, não funcionou. Haviam alguns problemas, sendo eles:
+      1. O `split()` recebe 2 parâmetros, o primeiro é obrigatório e o segundo é opcional. O primeiro parâmetro trata-se do delimitador (caractere que será usado para quebrar a STRING) e o segundo é a quantidade limite de vezes que tal delimitador deve ser considerado. Ou seja, considerando a STRING "teste@exemplo@aloha@" e aplique o método `split("@",2)`, o retorno seria um array contendo *["teste","exemplo","aloha@"]*.
+      2. A palavra reservada *length* estava ortograficamente errada.
+      3. A variável *total* não havia sido inicializada, logo, não poderia ser incrementada.
+
+USO INCORRETO DO `split()`:
+
+  ```
+  public class Program {
+	public static int countWords(String s) {
+		String[] words = s.split();
+		int total;
+		for(int i = 0; i < words.lenght; i++){
+				total++;
+		}
+		return total;
+		}
+}
+  ```
+
+USO CORRETO DO `split(delimitador, totalDeRepetições)`:
+
+  ```
+  public class Program {
+	public static int countWords(String s) {
+		String[] words = s.split(" ");
+		int total = 0;
+		for(int i = 0; i < words.length; i++){
+				total++;
+		}
+		return total;
+		}
+}
+  ```
 
 <br>
 

@@ -32,6 +32,8 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [TEXTO, INGLÊS] A tradução automática funciona bem. [Format String in Java with printf(), format(), Formatter and MessageFormat](https://stackabuse.com/how-to-format-a-string-in-java-with-examples/)
   
   [TEXTO] [PDF's de exercícios de um curso de Java, fornecidos pelo colega LUKE](https://drive.google.com/drive/folders/17WJfjTQgYtjgepvR1amOKD8s0nxlqZ6U)
+  
+  [TEXTO, INGLÊS, CODAR ONLINE] [EDABIT – Site com desafios JAVA](https://edabit.com/challenges)
 
 ## APLICATIVOS
   [Java N-IDE - Android Builder - Java SE Compiler](https://play.google.com/store/apps/details?id=com.duy.compiler.javanide&hl=pt_BR&gl=US)

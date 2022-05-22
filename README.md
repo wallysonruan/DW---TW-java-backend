@@ -6,14 +6,19 @@ SUMÁRIO:
   1. [INSIGHTS DA INTERAÇÃO COM OS DEMAIS](#INSIGHTS-DA-INTERAÇÃO-COM-OS-DEMAIS)
   2. [ALGORITMOS CODIFICADOS](#ALGORITMOS-CODIFICADOS)
      1. [FORNECIDOS PELO CURSO](#FORNECIDOS-PELO-CURSO)
-        1. MÓDULO 2
-           1. AULA 03
-     2. PESQUISADOS PARALELAMENTE
-        1. ESTUDO DE ESTRUTURA
-  3. 
-<br>
+        1. [MÓDULO 2](#MÓDULO-2)
+           1. [AULA 03](#AULA-03)
+           2. [AULA 08](#AULA-08)
+           3. [AULA 09](#AULA-09)
+     2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
+        1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
+           1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
+           2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
+           3. [PARÂMETROS](#3-parâmetros)
+        2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
+           1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
+           2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
 <hr>
-<br>
 
 ## INSIGHTS DA INTERAÇÃO COM OS DEMAIS
 <br>
@@ -28,7 +33,6 @@ SUMÁRIO:
 
   5. Para pessoas cegas, o uso simultâneo do chat e da explicação sonora é complicado, pois, quando acontece, serão duas vozes: a do leitor de tela e a do professor ao mesmo tempo, o que dificulta a concentração.  
 
-<br>
 <hr>
 <br>
 
@@ -37,8 +41,6 @@ SUMÁRIO:
 <br>
 
 #### MÓDULO 2
-
-<br>
 
 **AULA 03**: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
 
@@ -135,13 +137,10 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 
 <br>
 
-<br>
-
   EXERCÍCIO 2 – Aprendizados:
 
-  Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.  
-
-<br>
+  Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.
+  
 <hr>
 <br>
 
@@ -211,7 +210,9 @@ Nem todas as classes abaixo terão sido criadas no momento em que eu as registra
 
 <br>
 
-- [ ] FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")
+- [ ] CLASSE FUNCIONARIO 
+
+(CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")
 
 #### Funções Desejadas e Funções Já Adicionadas
   1. Mudar o nome;
@@ -221,7 +222,9 @@ Nem todas as classes abaixo terão sido criadas no momento em que eu as registra
 
 <br>
 
-- [ ] WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)
+- [ ] CLASSE WHATSAPP
+
+(CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)
   
 Representação da classe Whatsapp, usando a UML (Unified Modeling Language) – aprendi o básico dela no dia 15/05/2022.
 
@@ -258,7 +261,10 @@ Representação da classe Whatsapp, usando a UML (Unified Modeling Language) –
 - [ ] Editar contatos;
 - [ ] Apagar contatos.
 
-## Aprendizados
+<br>
+
+APRENDIZADOS:
+
 15/05/2022: Aprendi a criar funções e métodos que retornam algum valor, a diferença é bem pouca, como é possível ver abaixo.
 
 FUNÇÃO:

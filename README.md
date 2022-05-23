@@ -146,10 +146,11 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 <br>
 
 ### PESQUISADOS PARALELAMENTE
-
-#### ESTUDOS DE ESTRUTURAS
+Aqui registrarei os exercícios que, de fato, ensinaram-me algo, pois se eu tentar registrar TODOS os que estou a resolver a fim de praticar este README ficará gigantesco.
 
 <br>
+
+### ESTUDOS DE ESTRUTURAS
 
 #### 1. LINHA DO TEMPO (ITERAÇÃO, REPETIÇÃO)
 Após uma experiência envolvendo um infográfico de uma linha do tempo, estive a pensar na existência de programas que recebiam uma série de acontecimento e devolvia uma linha do tempo organizada cronologicamente. Curioso sobre como seria a lógica de tais programas, escrevi um em JAVA.
@@ -169,8 +170,6 @@ Por já ter conhecimento em outras linguagens o novo aprendizado envolveu:
   3. Construção de arrays, o que ainda devo me aprofundar.
   3. Prática no uso da ferramenta Scanner. Por exemplo, aprendi que os comandos: *System.util.Scanner.next()* e o *System.util.Scanner.nextLine()* são diferentes, o primeiro recebe apenas uma cadeia de String (uma palavra) e o segundo recebe toda uma linha (textos).
 
-<br>
-
 #### 2. NÚMEROS PARES OU ÍMPARES? (ITERAÇÃO, MÓDULO)
 
 Programa que recebe um número inicial e um final, além de receber o tipo de número desejado, isto é, par ou ímpar. Após os parâmetros terem sido declarados o programa itera o intervalo de números que há entre o INICIAL e o FINAL e devolve apenas os que são pares ou ímpares, a depender da escolha do usuário.
@@ -179,8 +178,6 @@ O que aprendi?
 
 1. A usar o operador MÓDULO (%), que divide um número pelo outro e retorna apenas o resto, ou seja, o que há no lado direito do ponto final, isto é, se o resultado for "0.1" o operador retornará 1.
 2. Prática relacionada à construção de funções em JAVA, são criadas ao declarar que são do tipo VOID e que recebem parâmetros.
-
-<br>
 
 #### 3. PARÂMETROS
 

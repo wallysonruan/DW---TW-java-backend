@@ -16,6 +16,7 @@ SUMÁRIO:
            2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
            3. [PARÂMETROS](#3-parâmetros)
            4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
+           5. [CÓDIGO HEX VÁLIDO](#5-código-hex-válido)
         2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
            1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
            2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
@@ -242,6 +243,39 @@ USO CORRETO DO `split(delimitador, totalDeRepetições)`:
 		}
 }
   ```
+
+<br>
+
+#### 5. CÓDIGO HEX VÁLIDO
+Desafio do site [EDABIT](https://edabit.com/challenge/9zBJYnBekqAo52zEp). Enunciado:
+
+*Criar uma função que determina se uma STRING é um código HEX válido ou não. O código HEX deve começar com uma # e ter exatamente 6 caracteres (7, se somar a cerquilha). Cada caractere´deve ser um dígito de 0 a 9 ou uma letra que esteja entre A a Z, todos eles devem ser ou minúscula ou maiúscula.*
+
+Ao ler o enunciado logo lembrei dos estudos de EXPRESSÕES REGULARES (RegEx), motivados pelo estudo do PYTHON há uns meses. Procurei pelos métodos da superclasse STRING e localizei o método `matches(_String regex_)`. Com o modelo em mãos, isto é, o formato padrão do código HEX, esbocei alguns modelos de RegEx e os testei usando o [Free Formatter – Java Regex Tester](https://www.freeformatter.com/java-regex-tester.html#ad-output). Após alguns testes, finalizei a função abaixo.
+
+
+APRENDIZADO:
+  1. Prática dos estudos das Expressões Regulares;
+  2. Prática do uso de métodos da superclasse String, bem como da perspectiva de superclasse e subclasse – o que têm facilitado minha interação com a linguagem.
+
+
+FUNÇÃO CRIADA:
+```
+public class Challenge {
+  public static boolean isValidHexCode(String str) {
+		boolean isValid = false;
+		
+		if(str.length() <=7 && str.charAt(0) == '#'){
+			isValid = str.matches("#[A-F0-9][A-F0-9][A-F0-9][A-F0-9][A-F0-9][A-F0-9]") ? true : false;
+			if (isValid == false){
+				isValid = str.matches("#[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]") ? true : false;
+			}
+		}
+		
+		return isValid;
+	}
+}
+```
 
 <br>
 

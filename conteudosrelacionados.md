@@ -20,8 +20,7 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   
   [TEXTO] [Link de um canal no DISCORD criado pelo colega LUKE](https://discord.gg/zeGVX7Nq)
   
-  [TEXTO] [Interface x Classes Abstratas, quais são as diferenças?](https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337#:~:text=Uma%20interface%20n%C3%A3o%20pode%20conter,esqueleto%20para%20ser%20posteriormente%20sobrescrita.
-)
+  [TEXTO] [Interface x Classes Abstratas, quais são as diferenças?](https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337#:~:text=Uma%20interface%20n%C3%A3o%20pode%20conter,esqueleto%20para%20ser%20posteriormente%20sobrescrita.)
   
 ### PRÁTICA (Exercícios)
 
@@ -34,6 +33,8 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [TEXTO] [PDF's de exercícios de um curso de Java, fornecidos pelo colega LUKE](https://drive.google.com/drive/folders/17WJfjTQgYtjgepvR1amOKD8s0nxlqZ6U)
   
   [TEXTO, INGLÊS, CODAR ONLINE] [EDABIT – Site com desafios JAVA](https://edabit.com/challenges)
+
+  [TEXTO, APLICATIVO] [FREE FORMATTER – Testador Online de Expressões Regulares em Java](https://www.freeformatter.com/java-regex-tester.html#ad-output)
 
 ## APLICATIVOS
   [Java N-IDE - Android Builder - Java SE Compiler](https://play.google.com/store/apps/details?id=com.duy.compiler.javanide&hl=pt_BR&gl=US)

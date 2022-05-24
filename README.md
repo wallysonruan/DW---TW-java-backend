@@ -18,6 +18,7 @@ SUMÁRIO:
            4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
            5. [CÓDIGO HEX VÁLIDO](#5-código-hex-válido)
            6. [RETORNE O MAIOR E O MENOR NÚMERO](#6-retorne-o-maior-e-o-menor-número)
+           7. [CONSERTE UMA CALCULADORA BÁSICA](#7-conserte-uma-calculadora-básica)
         2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
            1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
            2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
@@ -321,6 +322,49 @@ Graças à nova perspectiva quanto aos tipos não primitivos (String {texto}, Ar
 1. Conhecer a superclasse ARRAYS e utilizar seus métodos, como o `sort(original_array)` – tal método altera o array original, ou seja, não é necessário que retorne valor algum;
 2. Conhecer e utilizar o objeto Integer.
 
+<br>
+
+#### 7. CONSERTE UMA CALCULADORA BÁSICA
+Desafio do site [EDABIT](https://edabit.com/challenge/7bupZ6FmuAQwJE6CL). Enunciado:
+
+*Mubashir criou uma função que recebe dois números, `a` e `b`, e um operador `o`. A função dele deveria retornar o resultado correspondente ao cálculo matemático passado pelo usuário. Se o operador não for um dos caracteres especificados (`+`, `-`, `/` e `*`) ou se houver uma operação de divisão por zero a função deve retornar `null`. Para passar este desafio, ajude-o a corrigir o código dele.*
+
+CÓDIGO ERRADO:
+
+```
+public class Calculator { 
+	public static Object basicCalculator(a, o, b) {
+		int result = 0;
+		if(O == "+") return a + b;
+		if(o != "-") return a - b;
+		if(o != "/" || b == 0) return a / b;
+		if(0 == "*") return a * b;
+		return result;
+	}
+}
+```
+
+SOLUÇÃO:
+
+```
+public class Calculator { 
+	public static Object basicCalculator(int a, String o, int b) {
+		int result = 0;
+		if(o != "+" && o != "-" && o != "/" && o != "*" ) return null;
+		if(o == "+") return a + b;
+		if(o == "-") return a - b;
+		if(a == 0 || b == 0) return null;
+		if(o == "/") return a / b;
+		if(o == "*") return a * b;
+		return result;
+	}
+}
+```
+
+APRENDIZADO:
+  1. *Object* pode ser usado como tipo de retorno de uma função;
+  2. Sintaxe simplificada da estrutura condicional IF;
+  3. Lida com a correção de bugs no código alheio.
 
 <br>
 

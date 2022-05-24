@@ -17,6 +17,7 @@ SUMÁRIO:
            3. [PARÂMETROS](#3-parâmetros)
            4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
            5. [CÓDIGO HEX VÁLIDO](#5-código-hex-válido)
+           6. [RETORNE O MAIOR E O MENOR NÚMERO](#6-retorne-o-maior-e-o-menor-número)
         2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
            1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
            2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
@@ -259,7 +260,7 @@ APRENDIZADO:
   2. Prática do uso de métodos da superclasse String, bem como da perspectiva de superclasse e subclasse – o que têm facilitado minha interação com a linguagem.
 
 
-FUNÇÃO CRIADA:
+SOLUÇÃO:
 ```
 public class Challenge {
   public static boolean isValidHexCode(String str) {
@@ -276,6 +277,50 @@ public class Challenge {
 	}
 }
 ```
+
+<br>
+
+#### 6. RETORNE O MAIOR E O MENOR NÚMERO
+Desafio do site [EDABIT](https://edabit.com/challenge/iaCSbqngin2AXriyB). Enunciado:
+
+Crie um método que aceite uma STRING com números separados por um espaço e retorne o maior e o menor deles, no formato STRING.
+
+SOLUÇÃO:
+
+```
+import java.util.Arrays;
+
+public class Program {
+	
+	public static String highLow(String s){
+      String[] integers = s.split(" ");
+      int[] toBeSorted = new int[integers.length];
+      String high;
+      String low;
+      String result;
+		
+	    for(int i = 0; i < integers.length ; i++){
+	        toBeSorted[i] = Integer.parseInt(integers[i]);
+	    }
+	    
+	    Arrays.sort(toBeSorted);
+			high = Integer.toString(toBeSorted[toBeSorted.length - 1]);
+			low = Integer.toString(toBeSorted[0]);
+		
+		
+	    result =  high + " " + low;
+	    return result;
+	}
+}
+```
+
+APRENDIZADO:
+  
+Graças à nova perspectiva quanto aos tipos não primitivos (String {texto}, Array {conjunto de dados} e afins), isto é, vê-los como objetos, em outras palavras, "sub-classes", tenho tido o hábito de pesquisar por métodos da superclasse deles. Esse hábito ajuda a não perder tempo tentando criar uma lógica que já foi criada e implementada na linguagem. Este desafio prova isso.
+
+1. Conhecer a superclasse ARRAYS e utilizar seus métodos, como o `sort(original_array)` – tal método altera o array original, ou seja, não é necessário que retorne valor algum;
+2. Conhecer e utilizar o objeto Integer.
+
 
 <br>
 

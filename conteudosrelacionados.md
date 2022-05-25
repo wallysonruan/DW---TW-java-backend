@@ -21,6 +21,8 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [TEXTO] [Link de um canal no DISCORD criado pelo colega LUKE](https://discord.gg/zeGVX7Nq)
   
   [TEXTO] [Interface x Classes Abstratas, quais são as diferenças?](https://www.devmedia.com.br/interfaces-x-classes-abstratas/13337#:~:text=Uma%20interface%20n%C3%A3o%20pode%20conter,esqueleto%20para%20ser%20posteriormente%20sobrescrita.)
+
+  [TEXTO] [CLASSE WRAPPER, explorando as classes que englobam os tipos primitivos](https://www.devmedia.com.br/classes-wrapper-explorando-as-classes-que-empacotam-os-tipos-primitivos/24136)
   
 ### PRÁTICA (Exercícios)
 

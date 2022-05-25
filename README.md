@@ -10,6 +10,7 @@ SUMÁRIO:
            1. [AULA 03](#AULA-03)
            2. [AULA 08](#AULA-08)
            3. [AULA 09](#AULA-09)
+           4. [AULA 11](#AULA-11)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
         1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
            1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
@@ -144,6 +145,11 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
   EXERCÍCIO 2 – Aprendizados:
 
   Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.
+
+**AULA 11:**
+Na 11ª aula, o professor Rafael explicou sobre as CLASSES WRAPPERERS, ou, em outras palavras, soubre as variáveis encapsuladas. Eu havia percebido elas ao resolver exercícios paralelos (como o exercício [6](#6-retorne-o-maior-e-o-menor-número)), no entanto, a aula de hoje esclareceu o conceito mais ainda.
+
+Agora entendo porque alguns preferem declarar variáveis `Integer`, ao invés de `int`, fazem isso para que possam utilizar os métodos da classe que encapsula os tipos int e contam com métodos referentes ao tratamentos desses.
 
 <hr>
 <br>

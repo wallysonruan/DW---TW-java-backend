@@ -192,7 +192,7 @@ Tradução por parte:
     return false;
   }
 ```
-Se o objeto passado como parâmetro não for nulo e for uma instância da classe Conta execute o bloco de código abaixo, se não, returne `false`.
+Se o objeto passado como parâmetro não for nulo e for uma instância da classe Conta execute o bloco de código abaixo, se não, retorne `false`.
 
   2. 
 ```

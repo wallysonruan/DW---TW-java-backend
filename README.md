@@ -7,10 +7,10 @@ SUMÁRIO:
   2. [ALGORITMOS CODIFICADOS](#ALGORITMOS-CODIFICADOS)
      1. [FORNECIDOS PELO CURSO](#FORNECIDOS-PELO-CURSO)
         1. [MÓDULO 2](#MÓDULO-2)
-           1. [AULA 03](#AULA-03)
-           2. [AULA 08](#AULA-08)
-           3. [AULA 09](#AULA-09)
-           4. [AULA 11](#AULA-11)
+           1. [AULA 03](#aula-03-uma-pesquisa-para-uma-empresa-contendo-as-seguintes-perguntas)
+           2. [AULA 08](#aula-08-criando-um-jogo)
+           3. [AULA 09](#aula-09-aprendendo-a-passar-heranças)
+           4. [AULA 11](#aula-11-classes-wrappers-variáveis-encapsuladas-equals-e-hash)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
         1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
            1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
@@ -47,7 +47,7 @@ SUMÁRIO:
 
 #### MÓDULO 2
 
-**AULA 03**: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
+#### AULA 03: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
 
   1. Qual é o seu nome?; 
   2. Há quanto tempo trabalha aqui?;
@@ -57,7 +57,7 @@ Ao fim delas, se a pessoa funcionária tiver mais de 10 anos de trabalho, o sal�
 
 <br>
 
-**AULA 08**: Criando um jogo:
+#### AULA 08: Criando um jogo:
 
 Na aula 08 foi passado um exercício a ser resolvido em equipe, sendo ele:
   1. Criar uma classe jogador;
@@ -105,7 +105,7 @@ Percebam que tanto a INTERFACE Armas quanto a CLASSE Arma têm um método chamad
 
 <br>
 
-**AULA 09**: Aprendendo a passar HERANÇAS:
+#### AULA 09: Aprendendo a passar HERANÇAS:
 <br>
 
 Durante a aula 09 foram passados dois exercícios, listados abaixo.
@@ -148,7 +148,7 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 
 <br>
 
-**AULA 11: Classes Wrappers (Variáveis encapsuladas), Equals e  Hash**
+#### AULA 11: Classes Wrappers (Variáveis encapsuladas), Equals e  Hash
 
 1. **CLASSES WRAPPERS:** 
 

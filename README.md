@@ -10,7 +10,7 @@ SUMÁRIO:
            1. [AULA 03](#aula-03-uma-pesquisa-para-uma-empresa-contendo-as-seguintes-perguntas)
            2. [AULA 08](#aula-08-criando-um-jogo)
            3. [AULA 09](#aula-09-aprendendo-a-passar-heranças)
-           4. [AULA 11](#aula-11-classes-wrappers-variáveis-encapsuladas-equals-e-hash)
+           4. [AULA 11](#aula-11-classes-wrappers-equals-e-hash)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
         1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
            1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
@@ -148,7 +148,7 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 
 <br>
 
-#### AULA 11: Classes Wrappers (Variáveis encapsuladas), Equals e  Hash
+#### AULA 11: Classes Wrappers, Equals e  Hash
 
 1. **CLASSES WRAPPERS:** 
 

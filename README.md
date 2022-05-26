@@ -146,10 +146,89 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 
   Apenas pratiquei o aplicar dos conceitos em JAVA, pois já tinha experiência de heranças simples em PYTHON.
 
-**AULA 11:**
+<br>
+
+**AULA 11: Classes Wrappers (Variáveis encapsuladas), Equals e  Hash**
+
+1. **CLASSES WRAPPERS:** 
+
 Na 11ª aula, o professor Rafael explicou sobre as CLASSES WRAPPERERS, ou, em outras palavras, soubre as variáveis encapsuladas. Eu havia percebido elas ao resolver exercícios paralelos (como o exercício [6](#6-retorne-o-maior-e-o-menor-número)), no entanto, a aula de hoje esclareceu o conceito mais ainda.
 
 Agora entendo porque alguns preferem declarar variáveis `Integer`, ao invés de `int`, fazem isso para que possam utilizar os métodos da classe que encapsula os tipos int e contam com métodos referentes ao tratamentos desses.
+
+2. **EQUALS:**
+
+Finalmente entendi o EQUALS! Rafael explicou que ele serve para comparar `atributos`. Por ser um método padrão dos objetos, é necessário que o EQUALS seja sempre sobrescrito para atender às demandas do programador.
+
+Nessa aula ele usou o método para comparar se dois objetos da classe CONTA tinham dois atributos idênticos. Escreveu o código abaixo para fazer a validação.
+
+```
+@Override
+public boolean equals(Object obj){
+  if(obj != null && obj instaceof Conta){
+
+    return(
+      getNumeroConta().equals(
+        (
+        (Conta) obj).getNumeroConta() 
+        &&
+        getAgencia().equals(((Conta) obj).getAgencia()
+      )
+    );
+
+  }else{
+    return false;
+  }
+}
+```
+
+Tradução por parte:
+
+  1. 
+```
+  if(obj != null && obj instaceof Conta){
+
+  }else{
+    return false;
+  }
+```
+Se o objeto passado como parâmetro não for nulo e for uma instância da classe Conta execute o bloco de código abaixo, se não, returne `false`.
+
+  2. 
+```
+  return(
+    getNumeroConta().equals(
+      (
+      (Conta) obj).getNumeroConta() 
+      &&
+      getAgencia().equals(((Conta) obj).getAgencia()
+    )
+  );
+```
+Retorne o resultado booleano da seguinte lógica:
+
+O número da conta do objeto que está evocando o método `equals` é `equal`(*igual*) ao número da conta do objeto passado como parâmetro para o método **e** a agência do objeto evocador é igual à do objeto passado como parâmetro.
+
+
+COMPLEMENTO:
+
+Perceba o código abaixo. 
+
+```
+(Conta) obj
+```
+
+Questionei ao Rafael o porquê de instanciar **novamente** o objeto `obj` (passado como parâmetro) se a condicional já disse que ele é uma instância da classe Conta. Respondeu-me (não com as seguintes palavras) dizendo que a condicional apenas verificou se o `obj` é uma instância da classe Conta, todavia, ele não é encarado como objeto dentro do escopo do método, por isso é necessário instanciá-lo, ou, em outras palavras, reativar o estado de `objeto`.
+
+O código acima é uma forma abreviada de instanciação, sendo equivalente a:
+
+```
+Conta obj = new Conta();
+```
+
+3. **HASH**
+
+Outra forma de comparar atributos é usando o método `hashCode()`, ele verifica se os atributos têm o mesmo código hash, o retorno desse método é o próprio hash code e não um valor booleano.
 
 <hr>
 <br>

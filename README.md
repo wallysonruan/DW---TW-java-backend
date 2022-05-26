@@ -158,7 +158,7 @@ Agora entendo porque alguns preferem declarar variáveis `Integer`, ao invés de
 
 2. **EQUALS:**
 
-Finalmente entendi o EQUALS! Rafael explicou que ele serve para comparar `atributos`. Por ser um método padrão dos objetos, é necessário que o EQUALS seja sempre sobrescrito para atender às demandas do programador.
+Finalmente entendi o EQUALS! Rafael explicou que ele serve para comparar `atributos`. Por ser um método padrão dos objetos, é necessário que o EQUALS seja sempre sobrescrito para atender às demandas do programador. Além disso, foi abordada a diferença entre o operador `==` e o método `equals()`. O operador verifica se os objetos apontados estão no mesmo endereço de memória, enquanto que o segundo verifica se o conteúdo dos objetos apontados são iguais. Pude conferir mais detalhes no site [Geeks For Geeks](https://www.geeksforgeeks.org/difference-between-and-equals-method-in-java/). 
 
 Nessa aula ele usou o método para comparar se dois objetos da classe CONTA tinham dois atributos idênticos. Escreveu o código abaixo para fazer a validação.
 

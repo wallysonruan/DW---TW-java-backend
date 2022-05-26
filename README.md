@@ -152,7 +152,7 @@ Em resumo, entendi que a interface é melhor se for desejado apenas a padroniza�
 
 1. **CLASSES WRAPPERS:** 
 
-Na 11ª aula, o professor Rafael explicou sobre as CLASSES WRAPPERERS, ou, em outras palavras, soubre as variáveis encapsuladas. Eu havia percebido elas ao resolver exercícios paralelos (como o exercício [6](#6-retorne-o-maior-e-o-menor-número)), no entanto, a aula de hoje esclareceu o conceito mais ainda.
+Na 11ª aula, o professor Rafael explicou sobre as CLASSES WRAPPERERS, ou, em outras palavras, sobre as variáveis encapsuladas. Eu havia percebido elas ao resolver exercícios paralelos (como o exercício [6](#6-retorne-o-maior-e-o-menor-número)), no entanto, a aula de hoje esclareceu o conceito mais ainda.
 
 Agora entendo porque alguns preferem declarar variáveis `Integer`, ao invés de `int`, fazem isso para que possam utilizar os métodos da classe que encapsula os tipos int e contam com métodos referentes ao tratamentos desses.
 

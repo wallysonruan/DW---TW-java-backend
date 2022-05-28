@@ -1,5 +1,5 @@
 # Back-end Java
-Repositório contendo os arquivos dos códigos que escrevi durante o curso BACK-END JAVA do programa INCLUA oferecido pela THOUGHTWORKS, tendo as aulas ministradas pela DIGITAL HOUSE.
+Repositório contendo as experiências gerais relacionadas ao curso BACK-END JAVA do programa INCLUA oferecido pela THOUGHTWORKS, tendo as aulas ministradas pela DIGITAL HOUSE, além dos aprendizados envolvendo a linguagem JAVA e os arquivos dos códigos que escrevi durante o curso.
 
 SUMÁRIO:
 
@@ -9,8 +9,9 @@ SUMÁRIO:
         1. [MÓDULO 2](#MÓDULO-2)
            1. [AULA 03](#aula-03-uma-pesquisa-para-uma-empresa-contendo-as-seguintes-perguntas)
            2. [AULA 08](#aula-08-criando-um-jogo)
-           3. [AULA 09](#aula-09-aprendendo-a-passar-heranças)
-           4. [AULA 11](#aula-11-classes-wrappers-equals-e-hash)
+           3. [AULA 09 – Heranças e Polimorfismo](#aula-09-aprendendo-a-passar-heranças)
+           4. [AULA 11 – Classes Wrappers, Equals e Hash](#aula-11-classes-wrappers-equals-e-hash)
+           5. [AULA 12 – STREAM API (List, Stream, ForEach, Map, Reduce e Min Max)](#aula-12-stream-api)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
         1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
            1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
@@ -182,7 +183,7 @@ public boolean equals(Object obj){
 }
 ```
 
-Tradução por parte:
+Explicação do código acima, por partes:
 
   1. 
 ```
@@ -235,6 +236,162 @@ Outra forma de comparar atributos é usando o método `hashCode()`, ele verifica
 
 ### PESQUISADOS PARALELAMENTE
 Aqui registrarei os exercícios que, de fato, ensinaram-me algo, pois se eu tentar registrar TODOS os que estou a resolver a fim de praticar este README ficará gigantesco.
+
+<br>
+
+#### AULA 12: Stream API
+
+LIST e STREAM
+
+List é uma interface que, segundo [Jakob Jenkov](https://jenkov.com/tutorials/java-collections/list.html),  é um subtipo da classe Collection, ou seja, herda todos os métodos da Collection. É possível colocar qualquer tipo dentro de uma lista, inclusive objetos de diferentes classes (Integer, Boolean, String, …), no entanto, durante a aula o professor Rafael usou a sintaxe que limita a lista a conter apenas um tipo, por exemplo: `List <String> lista = [...]` .
+
+<br>
+
+MÉTODOS PARA LIDA COM LISTAS
+
+1. FOR EACH
+
+Apenas itera sobre os itens de uma lista e, a cada iteração, realiza a função que há dentro do escopo dele. Exemplo:
+
+```
+List<Integer> numbers = Arrays.asList(1,2,3);
+numbers.forEach( (Integer number) -> {
+  System.out.println(number);
+  });
+
+//Result: 
+1
+2
+3
+```
+
+Explicação do código acima, por partes:
+
+1. 
+```
+List<Integer> numbers = Arrays.asList(1,2,3);
+```
+A variável `numbers` receberá a seguinte lista: `[1,2,3]` – dentro da lista dela somente integers serão aceitos.
+
+2. 
+
+```
+numbers.forEach( (Integer number) -> {
+  System.out.println(number);
+  });
+```
+Da lista `numbers` o método forEach é chamado. Sintaxe dele: *forEach( (Tipo variável) -> {função a ser chamada a cada iteração} )*. A cada iteração o método *forEach()* irá imprimir o valor iterado `numbers`.
+
+<br>
+
+2. MAP
+
+Itera e retorna algo a cada iteração, o retorno será o resultado da função declarada dentro do método *map()*. 
+
+Para explicar a aplicação do método *map()*, o professor Rafael disponibilizou duas formas de resolver o seguinte desafio:
+
+> *Receber uma lista com letras minúsculas e alimentar outra lista com essas mesmas letras, todavia, maiúsculas.*
+
+Sendo elas:
+
+1. Antes do JAVA 8
+
+```
+List<String> alpha = Arrays.asList("a", "b", "c", "d");
+List<String> alphaUpper = new ArrayList<>();
+
+for (String s : alpha) {
+alphaUpper.add(s.toUpperCase());
+}
+
+System.out.println(alpha); //[a, b, c, d]
+System.out.println(alphaUpper); //[A, B, C, D]
+```
+
+2. Depois do JAVA 8
+
+```
+List<String> alpha = Arrays.asList("a", "b", "c", "d");
+
+List<String> alphaUpper = alpha.stream().
+                          .map(String::toUpperCase)
+                          .collect(Collectors.toList());
+
+System.out.println(alphaUpper); //[A, B, C, D]
+```
+
+<br>
+
+3. FILTER
+
+Retorna apenas os valores que passarem pela função declarada dentro do método *filter*, ou seja, filtra a lista.
+
+Exemplo:
+
+```
+List<Integer> numeros = Arrays.asList(1,2,3,4,5);
+
+List<Integer> menoresQueTres = numeros.stream()
+                              .filter(number -> number < 3)
+                              .collect(Collectors.toList());
+System.out.print(menoresQueTres);
+
+//Resultado: [1, 2]
+```
+
+<br>
+
+4. REDUCE
+
+Segundo o professor Rafael, o método Reduce é o mais complicado da lista de hoje (forEach, Map, Min Max, Filter e Reduce). A sintaxe do *reduce()* consiste de 3 ferramentas, sendo elas:
+
+    1. IDENTIDADE: um elemento que é o valor inicial da operação de redução e o resultado padrão se o fluxo estiver vazio.
+    2. ACUMULADOR: Função que aceita dois parâmetros: um resultado parcial da operação de redução e o próximo elemento do fluxo.
+    3. COMBINADOR:Uma função usada para combinar o resultado parcial da operação de redução, quando a redução é paralelizada ou quando há uma incompatibilidade entre os tipos de argumentos do acumulador e os tipos de implementação do acumulador.
+
+Em outras palavras:
+
+    1. Valor inicial ou Valor padrão. Caso a lista esteja vazia esse será o valor retornado. Caso não esteja vazia, será considerado como o primeiro valor, logo, a definição dele é importante. Um exemplo para melhor explicar essa importância é o relato contido na explicação do exercício dessa aula, veja em (FOR EACH)[].
+
+List<Integer> numberReducer = Arrays.asList(2,4,6,8,10);
+int result = numberReducer.stream()
+.reduce(0, (subtotal, element) -> subtotal + element);
+
+***
+
+List<String> words = Arrays.asList(“como”, “ usar”, “ reducer”, ” para”, “ unificar”, “ string”);
+String resultString = words.stream().reduce(“”,(parcialString, element) -> parcialString + element);
+
+System.out.print(resultString);
+
+//Result: como usar reducer para unificar string
+
+<br>
+
+5. MIN MAX
+
+Integer maxNumber = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).
+max(Comparator.comparing(Integer::valueOf))
+.get();
+
+Integer minNumber = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).
+min(Comparator.comparing(Integer::valueOf))
+.get();
+
+System.out.print(minNumber);
+System.out.print(maxNumber);
+
+//Result: 
+1
+9
+
+EXERCÍCIOS PARA PRÁTICA:
+
+// FOR: devemos criar uma lista de string com 5 posições e imprimir elas
+		// MAP: devemos criar uma lista string com 4 posições com valores MAIUSCULOS e utilizar o map para deixar minusculo
+		// FILTER: devemos criar uma lista de string de frutas com 3 posições, deve retornar apenas a fruta abacaxi
+		// REDUCER: devemos criar uma lista de integer com 3 posições e utilziar o reducer para multiplicar seus valores
+		// MIN e MAX:  devemos criar uma lista integer de 3 posições e retornar o valor maximo e minimo da lista
 
 <br>
 

@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="Aula08"/>
 	<classpathentry kind="src" path="Aula09"/>
+	<classpathentry kind="src" path="Aula12"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

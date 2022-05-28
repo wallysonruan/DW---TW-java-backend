@@ -343,33 +343,59 @@ System.out.print(menoresQueTres);
 
 4. REDUCE
 
+Método usado para reduzir a lista, seja somando, multiplicando, dividindo ou concatenando todos itens.
+
 Segundo o professor Rafael, o método Reduce é o mais complicado da lista de hoje (forEach, Map, Min Max, Filter e Reduce). A sintaxe do *reduce()* consiste de 3 ferramentas, sendo elas:
 
-    1. IDENTIDADE: um elemento que é o valor inicial da operação de redução e o resultado padrão se o fluxo estiver vazio.
-    2. ACUMULADOR: Função que aceita dois parâmetros: um resultado parcial da operação de redução e o próximo elemento do fluxo.
-    3. COMBINADOR:Uma função usada para combinar o resultado parcial da operação de redução, quando a redução é paralelizada ou quando há uma incompatibilidade entre os tipos de argumentos do acumulador e os tipos de implementação do acumulador.
+  1. IDENTIDADE:
+  
+  Um elemento que é o valor inicial da operação de redução e o resultado padrão se o fluxo estiver vazio.
+  
+  2. ACUMULADOR:
+  
+  Função que aceita dois parâmetros: um resultado parcial da operação de redução e o próximo elemento do fluxo.
+  
+  3. COMBINADOR:
+  
+  Uma função usada para combinar o resultado parcial da operação de redução, quando a redução é paralelizada ou quando há uma incompatibilidade entre os tipos de argumentos do acumulador e os tipos de implementação do acumulador.
 
 Em outras palavras:
 
-    1. Valor inicial ou Valor padrão. Caso a lista esteja vazia esse será o valor retornado. Caso não esteja vazia, será considerado como o primeiro valor, logo, a definição dele é importante. Um exemplo para melhor explicar essa importância é o relato contido na explicação do exercício dessa aula, veja em (FOR EACH)[].
+  1. Valor inicial ou Valor padrão. Caso a lista esteja vazia esse será o valor retornado. Caso não esteja vazia, será considerado como o primeiro valor, logo, a definição dele é importante. Um exemplo para melhor explicar essa importância é o relato contido na explicação do exercício dessa aula, veja em (FOR EACH)[].
 
+  2. Parênteses que abriga o *acumulador* e o *próximo item*.
+
+  3. Variável usada para guardar o resultado da função até então.
+
+<br>
+
+Exemplos do REDUCE:
+
+Soma de todos os itens:
+```
 List<Integer> numberReducer = Arrays.asList(2,4,6,8,10);
 int result = numberReducer.stream()
-.reduce(0, (subtotal, element) -> subtotal + element);
-
-***
-
+                          .reduce(0, (subtotal, element) -> subtotal + element);
+```
+Concatenação de todos os itens.
+```
 List<String> words = Arrays.asList(“como”, “ usar”, “ reducer”, ” para”, “ unificar”, “ string”);
 String resultString = words.stream().reduce(“”,(parcialString, element) -> parcialString + element);
 
 System.out.print(resultString);
 
 //Result: como usar reducer para unificar string
+```
 
 <br>
 
-5. MIN MAX
+5. MIN e MAX
 
+Como o nome diz, os métodos `min` e `max` servem para que sejam encontrados os menores e os maiores valores de uma determinada lista.
+
+Exemplo de aplicação:
+
+```
 Integer maxNumber = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9).
 max(Comparator.comparing(Integer::valueOf))
 .get();
@@ -384,14 +410,21 @@ System.out.print(maxNumber);
 //Result: 
 1
 9
+```
+<br>
 
 EXERCÍCIOS PARA PRÁTICA:
 
-// FOR: devemos criar uma lista de string com 5 posições e imprimir elas
-		// MAP: devemos criar uma lista string com 4 posições com valores MAIUSCULOS e utilizar o map para deixar minusculo
-		// FILTER: devemos criar uma lista de string de frutas com 3 posições, deve retornar apenas a fruta abacaxi
-		// REDUCER: devemos criar uma lista de integer com 3 posições e utilziar o reducer para multiplicar seus valores
-		// MIN e MAX:  devemos criar uma lista integer de 3 posições e retornar o valor maximo e minimo da lista
++ FOR: criar uma lista de string com 5 posições e imprimir elas
+
++ MAP: devemos criar uma lista string com 4 posições com valores MAIUSCULOS e utilizar o map para deixar minusculo.
+
++ FILTER: devemos criar uma lista de string de frutas com 3 posições, deve retornar apenas a fruta abacaxi
+
++ REDUCER: devemos criar uma lista de integer com 3 posições e utilziar o reducer para multiplicar seus valores
+
++ MIN e MAX:  devemos criar uma lista integer de 3 posições e retornar o valor maximo e minimo da lista
+<hr>
 
 <br>
 

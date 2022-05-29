@@ -13,17 +13,14 @@ SUMÁRIO:
            4. [AULA 11 – Classes Wrappers, Equals e Hash](#aula-11-classes-wrappers-equals-e-hash)
            5. [AULA 12 – STREAM API (List, Stream, ForEach, Map, Reduce e Min Max)](#aula-12-stream-api)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
-        1. [ESTUDO DE ESTRUTURAS](#estudos-de-estruturas)
-           1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
-           2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
-           3. [PARÂMETROS](#3-parâmetros)
-           4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
-           5. [CÓDIGO HEX VÁLIDO](#5-código-hex-válido)
-           6. [RETORNE O MAIOR E O MENOR NÚMERO](#6-retorne-o-maior-e-o-menor-número)
-           7. [CONSERTE UMA CALCULADORA BÁSICA](#7-conserte-uma-calculadora-básica)
-        2. [ESTRUTURAS VISANDO POO](#estruturas-visando-poo)
-           1. [FUNCIONARIO (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")](#classe-funcionario)
-           2. [WHATSAPP (CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)](#classe-whatsapp)
+        1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
+        2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
+        3. [PARÂMETROS](#3-parâmetros)
+        4. [CONTADOR DE PALAVRAS](#4-contador-de-palavras)
+        5. [CÓDIGO HEX VÁLIDO](#5-código-hex-válido)
+        6. [RETORNE O MAIOR E O MENOR NÚMERO](#6-retorne-o-maior-e-o-menor-número)
+        7. [CONSERTE UMA CALCULADORA BÁSICA](#7-conserte-uma-calculadora-básica)
+        8. [SHIRITORI](#8-shiritori)
 <hr>
 
 ## INSIGHTS DA INTERAÇÃO COM OS DEMAIS
@@ -231,12 +228,6 @@ Conta obj = new Conta();
 
 Outra forma de comparar atributos é usando o método `hashCode()`, ele verifica se os atributos têm o mesmo código hash, o retorno desse método é o próprio hash code e não um valor booleano.
 
-<hr>
-<br>
-
-### PESQUISADOS PARALELAMENTE
-Aqui registrarei os exercícios que, de fato, ensinaram-me algo, pois se eu tentar registrar TODOS os que estou a resolver a fim de praticar este README ficará gigantesco.
-
 <br>
 
 #### AULA 12: Stream API
@@ -428,7 +419,10 @@ EXERCÍCIOS PARA PRÁTICA:
 
 <br>
 
-### ESTUDOS DE ESTRUTURAS
+### PESQUISADOS PARALELAMENTE
+Aqui registrarei os exercícios que, de fato, ensinaram-me algo, pois se eu tentar registrar TODOS os que estou a resolver a fim de praticar este README ficará gigantesco.
+
+<br>
 
 #### 1. LINHA DO TEMPO (ITERAÇÃO, REPETIÇÃO)
 Após uma experiência envolvendo um infográfico de uma linha do tempo, estive a pensar na existência de programas que recebiam uma série de acontecimento e devolvia uma linha do tempo organizada cronologicamente. Curioso sobre como seria a lógica de tais programas, escrevi um em JAVA.
@@ -643,72 +637,13 @@ APRENDIZADO:
 
 <br>
 
-### ESTRUTURAS VISANDO POO
-Nem todas as classes abaixo terão sido criadas no momento em que eu as registrar neste README, tratam-se apenas de ideia. Para registrar quais já foram criadas e quais não, irei utilizar o recurso TASK LIST do MarkDown.
+#### 8. SHIRITORI
 
-<br>
+Exercício do site [EDABIT](https://edabit.com/challenge/rqum6rzyZQrC43Ldv). Consegui resolvê-lo apenas graças à abstração provida pela interface LIST e seus métodos, que aprendi durante a [AULA 12](#aula-12-stream-api) do curso.
 
-- [ ] CLASSE FUNCIONARIO 
+Com esse exercício pude exercitar o design *cada função deve ter apenas uma função*.
 
-(CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS")
-
-#### Funções Desejadas e Funções Já Adicionadas
-  1. Mudar o nome;
-  2. Mudar o cargo;
-  3. Aumentar o salário;
-  4. Mostrar todos os dados.
-
-<br>
-
-- [ ] CLASSE WHATSAPP
-
-(CRIAÇÃO, REUTILIZAÇÃO, ABSTRAÇÃO, "THIS", RETURN, SETTLERS, GETTERS)
-  
-Representação da classe Whatsapp, usando a UML (Unified Modeling Language) – aprendi o básico dela no dia 15/05/2022.
-
-|Whatsapp|
-|:--- |
-|- userNumber|
-|- userName|
-|- historicNames|
-|- totalContacts|
-|+ setNumber()|
-|+ changeNumber()|
-|+ setUserName()|
-|+ changeUserName()|
-
-|Contato|
-|:--- |
-|- id|
-|- name|
-|- historicNames|
-|- number|
-|+ setUserName()|
-|+ changeUserName()|
-|+ setNumber()|
-|+ changeNumber()|
-
-<br>
-
-#### Funções Desejadas e Funções Já Adicionadas
-- [ ] Adicionar nome;
-- [ ] Alterar o nome (mantendo registro de todas as alterações);
-- [ ] Adicionar um número de telefone;
-- [ ] Adicionar um número de telefone (mantendo registro de todas as alterações);
-- [ ] Criar contatos;
-- [ ] Editar contatos;
-- [ ] Apagar contatos.
-
-<br>
-
-APRENDIZADOS:
-
-15/05/2022: Aprendi a criar funções e métodos que retornam algum valor, a diferença é bem pouca, como é possível ver abaixo.
-
-FUNÇÃO:
-
-*public static **void** NOME(  ) { --corpo--;}*
-
-MÉTODO QUE RETORNA ALGO:
-
-*public **TipoDoRetorno** NOME(  ) {**return** oQueSeráRetornado;}*
+APRENDIZADO:
+  1. Método `public int size(){}`, verifica o tamanho da lista e retorna um integer correspondente.
+  2. Método `public boolean isEmpty(){}`, verifica se a lista está vazia e retorna um valor booleano.
+  3. Método `public boolean contains(element){}`, verifica se a lista tem algum elemento que seja igual ao passado como parâmetro e retorna um valor booleano.

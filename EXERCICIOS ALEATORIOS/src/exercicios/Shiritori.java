@@ -1,62 +1,51 @@
 package exercicios;
 
-/* 
- * This challenge is an English twist on the Japanese word game Shiritori. The basic premise is to follow two rules:
-
-First character of next word must match last character of previous word.
-The word must not have already been said.
-
-ATRIBUTES:
-words: an array of words already said.
-game_over: a boolean that is true if the game is over.
-
-METHODS:
-and three instance methods:
-
-play: a method that takes in a word as an argument and checks if it is valid (the word should follow rules #1 and #2 above).
-
-If it is valid, it adds the word to the words array, and returns the words array.
-If it is invalid (either rule is broken), it returns "game over" and sets the game_over boolean to true.
-restart: a method that sets the words array to an empty one [] and sets the game_over boolean to false. It should return "game restarted".
-getWords: a method that returns the words array.
-*/
-
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Shiritori {
 	private Integer totalWords = 0;
 	private List<String> words = new ArrayList<String>(totalWords);
+	private boolean gameOver = false;
 	
+	public boolean getGameOver(){
+		return gameOver;
+	}
 	public List<String> getWords() {
 		return this.words;
 	}
-	public void play(String word) {
+	public void play(String word) {	
 		if(this.words.isEmpty()) {
 			addToArray(word);
-		}else {
-			if(alreadySaid(word)) {
+		}
+		else {
+			if(alreadySaid(word)){
 				gameOver("already");
 			}else {
-				addToArray(word);
+				if(lastSameFirst(word)) {
+					addToArray(word);
+				}else {
+					gameOver("no-match");
+				}
 			}
-		}
+		}	
 	}
-	
+	private boolean lastSameFirst(String input){
+		int lastIndex = this.words.size() - 1;
+		String lastWord = this.words.get(lastIndex);
+		char lastChar = lastWord.charAt(lastWord.length() - 1);
+		char inputFirstChar = input.charAt(0);
+		
+		if(lastChar == inputFirstChar){
+			return true;
+		}else{
+			return false;
+		}	
+	}
 	private boolean alreadySaid(String input) {
-		boolean already = false;
-		
-		List<String> a = this.words.stream().filter(word -> word == input).collect(Collectors.toList());
-		
-		if(a.isEmpty()) {
-			return already;
-		}else {
-			already = true;
-			return already;
-		}
+		boolean already = this.words.contains(input);
+		return already;
 	}	
 	private void addToArray(String word) {
 		if(alreadySaid(word)) {
@@ -70,21 +59,41 @@ public class Shiritori {
 		
 		switch(status) {
 		case "already":
-			System.out.println("GAME OVER: Word already been said!");
+			System.out.println("\nGAME OVER: Word already been said!");
+			gameOver = true;
 			break;
 		case "no-match":
-			System.out.println("GAME OVER: First letter doesn't match with the last word last letter");
+			System.out.println("\nGAME OVER: First letter doesn't match with the last word last letter.");
+			gameOver = true;
 			break;
 		}
+	}
+	public void restart(){
+		this.words.clear();
+	}
+	public void headline(){
+		System.out.println("[            SHIRITORI           ]");
+	}
+	public void rules(){
+		System.out.println("\nRULES:\n - You cannot repeat the words.\n- After the first,all the words must start with the same letter that the last one ended with.\n \n");
+	}
+	public void result(){
+		System.out.printf("\nYou lost after %d words.\n%s", this.totalWords, this.words);
 	}
 
 	public static void main(String[] args) {
 		Shiritori shiritori = new Shiritori();
+		Scanner userInput = new Scanner(System.in);
 		
-		shiritori.play("oi");
-		shiritori.play("oi");
-		shiritori.play("ALOHA");
-		System.out.println(shiritori.getWords());
+		shiritori.headline();
+		shiritori.rules();
+		
+		while(shiritori.getGameOver() == false){
+			String input = userInput.nextLine();
+			shiritori.play(input);
+		}
+		userInput.close();
+		
+		shiritori.result();
 	}
-
 }

@@ -1,4 +1,4 @@
-package list;
+package exerciciosAulaOnline;
 
 import java.util.stream.Stream;
 import java.util.Comparator;

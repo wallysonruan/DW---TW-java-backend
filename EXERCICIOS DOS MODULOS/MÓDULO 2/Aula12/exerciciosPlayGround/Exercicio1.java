@@ -12,11 +12,11 @@ import java.util.Map;
 public class Exercicio1 {
 	
 	public static Map<String, List<String>> apelidos = new HashMap<String, List<String>>(){{
-	put("João", Arrays.asList("Juan","Fissura","Maromba"));
-	put("Miguel", Arrays.asList("Night Watch", "Bruce Wayne", "Tampinha"));
-	put("Maria", Arrays.asList("Wonder Woman","Mary","Marilene"));
-	put("Lucas", Arrays.asList("Lukinha", "Jorge", "George"));
-	}};
+		put("João", Arrays.asList("Juan","Fissura","Maromba"));
+		put("Miguel", Arrays.asList("Night Watch", "Bruce Wayne", "Tampinha"));
+		put("Maria", Arrays.asList("Wonder Woman","Mary","Marilene"));
+		put("Lucas", Arrays.asList("Lukinha", "Jorge", "George"));
+		}};
 
 	public static Map<Integer, String> loteria = new HashMap<Integer, String>(){{			
 		put(0, "Ovos");
@@ -27,10 +27,9 @@ public class Exercicio1 {
 		put(5, "Fogo");
 	}};
 
-	public static void displayValues(Map<?, ?> collection) {
+	public static void displayValues(Map<?,?> collection) {
 		for(Object chave: collection.keySet()) {
-			Object valor = collection.get(chave);
-			System.out.println(chave + ": " + valor);
+			System.out.println(chave + ": " + collection.get(chave));
 		}
 	}
 	

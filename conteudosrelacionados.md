@@ -26,6 +26,10 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
 
   [TEXTO, INGLÊS] [GEEKS FOR GEEKS, Difference Between == and .equals() Method in Java](https://www.geeksforgeeks.org/difference-between-and-equals-method-in-java/)
   
+  [VÍDEO] [Aula 01 - Entendendo as requisições HTTP](https://www.youtube.com/watch?v=7CxhgB22n9U)
+  
+  [VÍDEO] [Entenda o que é HTTP e o quão importante esse protocolo é para o seu site](https://rockcontent.com/br/blog/http/)
+  
 ### PRÁTICA (Exercícios)
 
   [VÍDEO E TEXTO] [Digital House: Thoughtworks Java](https://br-playground.digitalhouse.com/)

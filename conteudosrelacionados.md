@@ -28,7 +28,9 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   
   [VÍDEO] [Aula 01 - Entendendo as requisições HTTP](https://www.youtube.com/watch?v=7CxhgB22n9U)
   
-  [VÍDEO] [Entenda o que é HTTP e o quão importante esse protocolo é para o seu site](https://rockcontent.com/br/blog/http/)
+  [TEXTO] [Entenda o que é HTTP e o quão importante esse protocolo é para o seu site](https://rockcontent.com/br/blog/http/)
+  
+  [TEXTO] [RESTful API Design: 13 Best Practices to Make Your Users Happy](https://florimond.dev/en/posts/2018/08/restful-api-design-13-best-practices-to-make-your-users-happy/)
   
 ### PRÁTICA (Exercícios)
 

@@ -8,7 +8,9 @@
 
 ## O que são SERVLETS?
 
-> Servlet (servidorzinho em tradução livre) é uma classe Java usada para estender as funcionalidades de um servidor. Apesar dos servlets poderem responder a quaisquer tipos de requisições, eles normalmente são usados para estender as aplicações hospedadas por servidores web, desta forma eles podem ser imaginados como Applets (pequenos aplicativos em tradução livre) Java que rodam em servidores em vez de rodarem nos navegadores web. Estes tipos de servlets são os equivalentes Java a outras tecnologias de conteúdo Web dinâmico, como PHP e ASP.NET. Também pode ser definido como um componente semelhante um servidor, que gera dados HTML e XML para a camada de apresentação de uma aplicação Web. Ele processa dinamicamente requisições e respostas.
+Servlet (servidorzinho em tradução livre) é uma classe Java usada para estender as funcionalidades de um servidor. Apesar dos servlets poderem responder a quaisquer tipos de requisições, eles normalmente são usados para estender as aplicações hospedadas por servidores web, desta forma eles podem ser imaginados como Applets (pequenos aplicativos em tradução livre) Java que rodam em servidores em vez de rodarem nos navegadores web. Estes tipos de servlets são os equivalentes Java a outras tecnologias de conteúdo Web dinâmico, como PHP e ASP.NET. 
+
+Também pode ser definido como um componente semelhante um servidor, que gera dados HTML e XML para a camada de apresentação de uma aplicação Web. Ele processa dinamicamente requisições e respostas.
 
 *FONTE: [Wikipedia](https://pt.wikipedia.org/wiki/Servlet)*
 
@@ -17,3 +19,13 @@ Em outras palavras, é o que permite que códigos JAVA funcionem em servidores, 
 <br>
 
 ![Representação do funcionamento dos servlets](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/JSPLife.svg/800px-JSPLife.svg.png)
+
+## O que é MVC (Model View Controler)?
+
+MVC é um padrão de arquitetura de software que separa a aplicação em 3 camadas. A fim de facilitar o entendimento, abaixo estarão as camadas listadas na ordem de funcionamento.
+
+- **V**iew: Camada de interação do usuário.
+- **M**odel: Camada de manipulação dos dados.
+- **C**ontroller: Camada de controle.
+
+Exemplo: Ao entrar no site, vemos a camada VIEW

@@ -3,15 +3,16 @@ Repositório contendo as experiências gerais relacionadas ao curso BACK-END JAV
 
 SUMÁRIO:
 
-  1. [INSIGHTS DA INTERAÇÃO COM OS DEMAIS](#INSIGHTS-DA-INTERAÇÃO-COM-OS-DEMAIS)
-  2. [ALGORITMOS CODIFICADOS](#ALGORITMOS-CODIFICADOS)
-     1. [FORNECIDOS PELO CURSO](#FORNECIDOS-PELO-CURSO)
-        1. [MÓDULO 2](#MÓDULO-2)
+  1. [INSIGHTS DA INTERAÇÃO COM OS DEMAIS](#insights-da-interação-com-os-demais)
+  2. [ALGORITMOS CODIFICADOS](#algoritmos-codificados)
+     1. [FORNECIDOS PELO CURSO](#fornecidos-pelo-curso)
+        1. [MÓDULO 2](#módulo-2)
            1. [AULA 03](#aula-03-uma-pesquisa-para-uma-empresa-contendo-as-seguintes-perguntas)
            2. [AULA 08](#aula-08-criando-um-jogo)
            3. [AULA 09 – Heranças e Polimorfismo](#aula-09-aprendendo-a-passar-heranças)
            4. [AULA 11 – Classes Wrappers, Equals e Hash](#aula-11-classes-wrappers-equals-e-hash)
            5. [AULA 12 – STREAM API (List, Stream, ForEach, Map, Reduce e Min Max)](#aula-12-stream-api)
+        2. [MÓDULO 3](#módulo-03)
      2. [PESQUISADOS PARALELAMENTE](#pesquisados-paralelamente)
         1. [LINHA DO TEMPO](#1-linha-do-tempo-iteração-repetição)
         2. [NÚMEROS PARES OU ÍMPARES](#2-números-pares-ou-ímpares-iteração-módulo)
@@ -44,6 +45,7 @@ SUMÁRIO:
 <br>
 
 #### MÓDULO 2
+Repositório com os arquivos do segundo módulo: [MÓDULO 02](https://github.com/wallysonruan/DW---TW-java-backend/tree/main/M%C3%93DULOS/M%C3%93DULO%202).
 
 #### AULA 03: Uma pesquisa para uma empresa contendo as seguintes perguntas: 
 
@@ -418,6 +420,9 @@ EXERCÍCIOS PARA PRÁTICA:
 <hr>
 
 <br>
+
+#### MÓDULO 03
+Repositório com os arquivos do terceiro módulo: [MÓDULO 03](https://github.com/wallysonruan/DW---TW-java-backend/tree/main/M%C3%93DULOS/M%C3%93DULO%203):.
 
 ### PESQUISADOS PARALELAMENTE
 Aqui registrarei os exercícios que, de fato, ensinaram-me algo, pois se eu tentar registrar TODOS os que estou a resolver a fim de praticar este README ficará gigantesco.

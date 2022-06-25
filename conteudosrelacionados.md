@@ -25,12 +25,10 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [TEXTO] [CLASSE WRAPPER, explorando as classes que englobam os tipos primitivos](https://www.devmedia.com.br/classes-wrapper-explorando-as-classes-que-empacotam-os-tipos-primitivos/24136)
 
   [TEXTO, INGLÊS] [GEEKS FOR GEEKS, Difference Between == and .equals() Method in Java](https://www.geeksforgeeks.org/difference-between-and-equals-method-in-java/)
-  
-  [VÍDEO] [Aula 01 - Entendendo as requisições HTTP](https://www.youtube.com/watch?v=7CxhgB22n9U)
-  
-  [TEXTO] [Entenda o que é HTTP e o quão importante esse protocolo é para o seu site](https://rockcontent.com/br/blog/http/)
-  
-  [TEXTO] [RESTful API Design: 13 Best Practices to Make Your Users Happy](https://florimond.dev/en/posts/2018/08/restful-api-design-13-best-practices-to-make-your-users-happy/)
+
+  [VÍDEO] [API Design | Best Practices](https://www.youtube.com/watch?v=ntoYSsNo9Ww)
+
+  [VÍDEO] [Curso - Java WEB Level 1 (Servlet - jsp - JDBC)](https://www.youtube.com/watch?v=dVRYwQc8uYc&list=PLbEOwbQR9lqz9AnwhrrOLz9cz1-TxoiUg&index=3)
   
 ### PRÁTICA (Exercícios)
 

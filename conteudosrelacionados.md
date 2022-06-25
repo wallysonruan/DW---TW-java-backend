@@ -29,6 +29,8 @@ Aqui listarei sites que contêm conteúdos relacionados à linguagem Java, sejam
   [VÍDEO] [API Design | Best Practices](https://www.youtube.com/watch?v=ntoYSsNo9Ww)
 
   [VÍDEO] [Curso - Java WEB Level 1 (Servlet - jsp - JDBC)](https://www.youtube.com/watch?v=dVRYwQc8uYc&list=PLbEOwbQR9lqz9AnwhrrOLz9cz1-TxoiUg&index=3)
+
+  [TEXTO] [Introdução ao Java Server Pages - JSP](https://www.devmedia.com.br/introducao-ao-java-server-pages-jsp/25602)
   
 ### PRÁTICA (Exercícios)
 

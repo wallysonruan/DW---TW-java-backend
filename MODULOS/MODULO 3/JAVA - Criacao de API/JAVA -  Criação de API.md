@@ -6,7 +6,11 @@
 
 "Webservices", em Português "serviços da internet", é toda aplicação aberta a receber requisições e a emitir recursos baseados em tais requisições. Utilizam o protocolo HTTP e/ou HTTPS para efetuar a comunicação. Não depende de uma tecnologia específica, ou seja, pode receber requisições de Python, Javascript e outras mesmo tendo sido escrita em JAVA.
 
-O texto acima é provisório, pretendo abordar também a diferença entre API e WebServices.
+### WEBSERVICES x API
+
+A principal diferença entre ambas é que WEBSERVICES exigem conexão via internet e APIs não. Todo WEBSERVICE é uma API, mas nem toda API é um WEBSERVICE, afinal, assim como as APIs os WEBSERVICES atua como intermediário entre dois programas.
+
+Os textos acima são provisórios, pretendo escrevê-los com mais detalhe.
 
 ## Estrutura padrão de um WebService
 
